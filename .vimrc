@@ -22,8 +22,8 @@ call plug#end()
 "
 " Create ~/.vim/tmp and set all temp directories/files to goto ~/.vim/tmp.
 "
-if !isdirectory('~/.vim/tmp')
-  call mkdir('~/.vim/tmp', 'p')
+if !isdirectory($HOME . '/.vim/tmp')
+  call mkdir($HOME . '/.vim/tmp', 'p')
 endif
 
 set undodir=~/.vim/tmp
